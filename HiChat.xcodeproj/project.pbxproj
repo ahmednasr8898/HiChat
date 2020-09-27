@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790C860825205CCA00F8E932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C860725205CCA00F8E932 /* AppDelegate.swift */; };
+		790C860A25205CCA00F8E932 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C860925205CCA00F8E932 /* SceneDelegate.swift */; };
+		790C860C25205CCA00F8E932 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C860B25205CCA00F8E932 /* ViewController.swift */; };
+		790C860F25205CCA00F8E932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790C860D25205CCA00F8E932 /* Main.storyboard */; };
+		790C861125205CCB00F8E932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790C861025205CCB00F8E932 /* Assets.xcassets */; };
+		790C861425205CCB00F8E932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790C861225205CCB00F8E932 /* LaunchScreen.storyboard */; };
+		790C861F25205CCC00F8E932 /* HiChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C861E25205CCC00F8E932 /* HiChatTests.swift */; };
+		790C862A25205CCC00F8E932 /* HiChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C862925205CCC00F8E932 /* HiChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		790C861B25205CCC00F8E932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790C85FC25205CCA00F8E932 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 790C860325205CCA00F8E932;
+			remoteInfo = HiChat;
+		};
+		790C862625205CCC00F8E932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790C85FC25205CCA00F8E932 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 790C860325205CCA00F8E932;
+			remoteInfo = HiChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		790C860425205CCA00F8E932 /* HiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		790C860725205CCA00F8E932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		790C860925205CCA00F8E932 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		790C860B25205CCA00F8E932 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		790C860E25205CCA00F8E932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		790C861025205CCB00F8E932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		790C861325205CCB00F8E932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		790C861525205CCB00F8E932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		790C861A25205CCC00F8E932 /* HiChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		790C861E25205CCC00F8E932 /* HiChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatTests.swift; sourceTree = "<group>"; };
+		790C862025205CCC00F8E932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		790C862525205CCC00F8E932 /* HiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		790C862925205CCC00F8E932 /* HiChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatUITests.swift; sourceTree = "<group>"; };
+		790C862B25205CCC00F8E932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		790C860125205CCA00F8E932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C861725205CCC00F8E932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C862225205CCC00F8E932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		790C85FB25205CCA00F8E932 = {
+			isa = PBXGroup;
+			children = (
+				790C860625205CCA00F8E932 /* HiChat */,
+				790C861D25205CCC00F8E932 /* HiChatTests */,
+				790C862825205CCC00F8E932 /* HiChatUITests */,
+				790C860525205CCA00F8E932 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		790C860525205CCA00F8E932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				790C860425205CCA00F8E932 /* HiChat.app */,
+				790C861A25205CCC00F8E932 /* HiChatTests.xctest */,
+				790C862525205CCC00F8E932 /* HiChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		790C860625205CCA00F8E932 /* HiChat */ = {
+			isa = PBXGroup;
+			children = (
+				790C860725205CCA00F8E932 /* AppDelegate.swift */,
+				790C860925205CCA00F8E932 /* SceneDelegate.swift */,
+				790C860B25205CCA00F8E932 /* ViewController.swift */,
+				790C860D25205CCA00F8E932 /* Main.storyboard */,
+				790C861025205CCB00F8E932 /* Assets.xcassets */,
+				790C861225205CCB00F8E932 /* LaunchScreen.storyboard */,
+				790C861525205CCB00F8E932 /* Info.plist */,
+			);
+			path = HiChat;
+			sourceTree = "<group>";
+		};
+		790C861D25205CCC00F8E932 /* HiChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				790C861E25205CCC00F8E932 /* HiChatTests.swift */,
+				790C862025205CCC00F8E932 /* Info.plist */,
+			);
+			path = HiChatTests;
+			sourceTree = "<group>";
+		};
+		790C862825205CCC00F8E932 /* HiChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				790C862925205CCC00F8E932 /* HiChatUITests.swift */,
+				790C862B25205CCC00F8E932 /* Info.plist */,
+			);
+			path = HiChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		790C860325205CCA00F8E932 /* HiChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790C862E25205CCC00F8E932 /* Build configuration list for PBXNativeTarget "HiChat" */;
+			buildPhases = (
+				790C860025205CCA00F8E932 /* Sources */,
+				790C860125205CCA00F8E932 /* Frameworks */,
+				790C860225205CCA00F8E932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiChat;
+			productName = HiChat;
+			productReference = 790C860425205CCA00F8E932 /* HiChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		790C861925205CCC00F8E932 /* HiChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790C863125205CCC00F8E932 /* Build configuration list for PBXNativeTarget "HiChatTests" */;
+			buildPhases = (
+				790C861625205CCC00F8E932 /* Sources */,
+				790C861725205CCC00F8E932 /* Frameworks */,
+				790C861825205CCC00F8E932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790C861C25205CCC00F8E932 /* PBXTargetDependency */,
+			);
+			name = HiChatTests;
+			productName = HiChatTests;
+			productReference = 790C861A25205CCC00F8E932 /* HiChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		790C862425205CCC00F8E932 /* HiChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790C863425205CCC00F8E932 /* Build configuration list for PBXNativeTarget "HiChatUITests" */;
+			buildPhases = (
+				790C862125205CCC00F8E932 /* Sources */,
+				790C862225205CCC00F8E932 /* Frameworks */,
+				790C862325205CCC00F8E932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790C862725205CCC00F8E932 /* PBXTargetDependency */,
+			);
+			name = HiChatUITests;
+			productName = HiChatUITests;
+			productReference = 790C862525205CCC00F8E932 /* HiChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		790C85FC25205CCA00F8E932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ahmed Nasr";
+				TargetAttributes = {
+					790C860325205CCA00F8E932 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					790C861925205CCC00F8E932 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 790C860325205CCA00F8E932;
+					};
+					790C862425205CCC00F8E932 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 790C860325205CCA00F8E932;
+					};
+				};
+			};
+			buildConfigurationList = 790C85FF25205CCA00F8E932 /* Build configuration list for PBXProject "HiChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 790C85FB25205CCA00F8E932;
+			productRefGroup = 790C860525205CCA00F8E932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				790C860325205CCA00F8E932 /* HiChat */,
+				790C861925205CCC00F8E932 /* HiChatTests */,
+				790C862425205CCC00F8E932 /* HiChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		790C860225205CCA00F8E932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790C861425205CCB00F8E932 /* LaunchScreen.storyboard in Resources */,
+				790C861125205CCB00F8E932 /* Assets.xcassets in Resources */,
+				790C860F25205CCA00F8E932 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C861825205CCC00F8E932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C862325205CCC00F8E932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		790C860025205CCA00F8E932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790C860C25205CCA00F8E932 /* ViewController.swift in Sources */,
+				790C860825205CCA00F8E932 /* AppDelegate.swift in Sources */,
+				790C860A25205CCA00F8E932 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C861625205CCC00F8E932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790C861F25205CCC00F8E932 /* HiChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C862125205CCC00F8E932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790C862A25205CCC00F8E932 /* HiChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		790C861C25205CCC00F8E932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 790C860325205CCA00F8E932 /* HiChat */;
+			targetProxy = 790C861B25205CCC00F8E932 /* PBXContainerItemProxy */;
+		};
+		790C862725205CCC00F8E932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 790C860325205CCA00F8E932 /* HiChat */;
+			targetProxy = 790C862625205CCC00F8E932 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		790C860D25205CCA00F8E932 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790C860E25205CCA00F8E932 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		790C861225205CCB00F8E932 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790C861325205CCB00F8E932 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		790C862C25205CCC00F8E932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		790C862D25205CCC00F8E932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		790C862F25205CCC00F8E932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5Y442FJFB;
+				INFOPLIST_FILE = HiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ans96283.HiChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		790C863025205CCC00F8E932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5Y442FJFB;
+				INFOPLIST_FILE = HiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ans96283.HiChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		790C863225205CCC00F8E932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5Y442FJFB;
+				INFOPLIST_FILE = HiChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ans96283.HiChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiChat.app/HiChat";
+			};
+			name = Debug;
+		};
+		790C863325205CCC00F8E932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5Y442FJFB;
+				INFOPLIST_FILE = HiChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ans96283.HiChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiChat.app/HiChat";
+			};
+			name = Release;
+		};
+		790C863525205CCC00F8E932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5Y442FJFB;
+				INFOPLIST_FILE = HiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ans96283.HiChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiChat;
+			};
+			name = Debug;
+		};
+		790C863625205CCC00F8E932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5Y442FJFB;
+				INFOPLIST_FILE = HiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ans96283.HiChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		790C85FF25205CCA00F8E932 /* Build configuration list for PBXProject "HiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C862C25205CCC00F8E932 /* Debug */,
+				790C862D25205CCC00F8E932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790C862E25205CCC00F8E932 /* Build configuration list for PBXNativeTarget "HiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C862F25205CCC00F8E932 /* Debug */,
+				790C863025205CCC00F8E932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790C863125205CCC00F8E932 /* Build configuration list for PBXNativeTarget "HiChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C863225205CCC00F8E932 /* Debug */,
+				790C863325205CCC00F8E932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790C863425205CCC00F8E932 /* Build configuration list for PBXNativeTarget "HiChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C863525205CCC00F8E932 /* Debug */,
+				790C863625205CCC00F8E932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 790C85FC25205CCA00F8E932 /* Project object */;
+}
