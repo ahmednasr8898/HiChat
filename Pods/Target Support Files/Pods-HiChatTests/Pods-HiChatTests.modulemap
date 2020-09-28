@@ -1,0 +1,6 @@
+framework module Pods_HiChatTests {
+  umbrella header "Pods-HiChatTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
