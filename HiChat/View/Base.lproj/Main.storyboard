@@ -285,35 +285,52 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cYx-G7-pdI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cYx-G7-pdI">
+                                                    <rect key="frame" x="7" y="10" width="400" height="118"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HF-ck-WwD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Hello" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-Jz-Nxx">
-                                                            <rect key="frame" x="0.0" y="20.5" width="414" height="107.5"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        </textView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAW-ey-1y9">
+                                                            <rect key="frame" x="0.0" y="16" width="83" height="102"/>
+                                                            <subviews>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Hello" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-Jz-Nxx">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="102"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="230" id="Ip9-Ui-WOT"/>
+                                                                    </constraints>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="Uge-Jz-Nxx" secondAttribute="bottom" id="00S-gD-WBN"/>
+                                                                <constraint firstItem="Uge-Jz-Nxx" firstAttribute="top" secondItem="sAW-ey-1y9" secondAttribute="top" id="Hf0-qP-BTy"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Uge-Jz-Nxx" secondAttribute="trailing" id="cfd-yf-ZRY"/>
+                                                                <constraint firstItem="Uge-Jz-Nxx" firstAttribute="leading" secondItem="sAW-ey-1y9" secondAttribute="leading" id="fRO-Wz-gDO"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="cYx-G7-pdI" firstAttribute="leading" secondItem="qYm-Si-Ndw" secondAttribute="leading" id="1iJ-of-3oM"/>
-                                                <constraint firstAttribute="trailing" secondItem="cYx-G7-pdI" secondAttribute="trailing" id="h7A-HD-EuM"/>
+                                                <constraint firstItem="cYx-G7-pdI" firstAttribute="leading" secondItem="qYm-Si-Ndw" secondAttribute="leading" constant="7" id="1iJ-of-3oM"/>
+                                                <constraint firstAttribute="trailing" secondItem="cYx-G7-pdI" secondAttribute="trailing" constant="7" id="h7A-HD-EuM"/>
                                                 <constraint firstAttribute="bottom" secondItem="cYx-G7-pdI" secondAttribute="bottom" id="jdS-DT-cZr"/>
-                                                <constraint firstItem="cYx-G7-pdI" firstAttribute="top" secondItem="qYm-Si-Ndw" secondAttribute="top" id="veh-eE-Z2G"/>
+                                                <constraint firstItem="cYx-G7-pdI" firstAttribute="top" secondItem="qYm-Si-Ndw" secondAttribute="top" constant="10" id="veh-eE-Z2G"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="View" destination="sAW-ey-1y9" id="u5f-84-x9g"/>
                                             <outlet property="messgeTextView" destination="Uge-Jz-Nxx" id="pWb-BU-bFz"/>
                                             <outlet property="senderMessegeLbl" destination="5HF-ck-WwD" id="ay6-0Q-ib4"/>
+                                            <outlet property="stackView" destination="cYx-G7-pdI" id="pGC-nT-w9K"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

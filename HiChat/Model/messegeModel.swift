@@ -13,4 +13,5 @@ struct messegeModel {
     var messegeKey: String?
     var senderMessege: String?
     var textMessege: String?
+    var senderID: String?
 }
