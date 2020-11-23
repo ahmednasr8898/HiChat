@@ -14,8 +14,6 @@
 		790C860F25205CCA00F8E932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790C860D25205CCA00F8E932 /* Main.storyboard */; };
 		790C861125205CCB00F8E932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790C861025205CCB00F8E932 /* Assets.xcassets */; };
 		790C861425205CCB00F8E932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790C861225205CCB00F8E932 /* LaunchScreen.storyboard */; };
-		790C861F25205CCC00F8E932 /* HiChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C861E25205CCC00F8E932 /* HiChatTests.swift */; };
-		790C862A25205CCC00F8E932 /* HiChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C862925205CCC00F8E932 /* HiChatUITests.swift */; };
 		790C863A252060E200F8E932 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C8639252060E200F8E932 /* HomeCell.swift */; };
 		790C863C25206BD600F8E932 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 790C863B25206BD600F8E932 /* GoogleService-Info.plist */; };
 		790C863E252091EF00F8E932 /* roomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C863D252091EF00F8E932 /* roomsVC.swift */; };
@@ -58,11 +56,7 @@
 		790C861325205CCB00F8E932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790C861525205CCB00F8E932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		790C861A25205CCC00F8E932 /* HiChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		790C861E25205CCC00F8E932 /* HiChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatTests.swift; sourceTree = "<group>"; };
-		790C862025205CCC00F8E932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		790C862525205CCC00F8E932 /* HiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		790C862925205CCC00F8E932 /* HiChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatUITests.swift; sourceTree = "<group>"; };
-		790C862B25205CCC00F8E932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		790C8639252060E200F8E932 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		790C863B25206BD600F8E932 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		790C863D252091EF00F8E932 /* roomsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomsVC.swift; sourceTree = "<group>"; };
@@ -109,8 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				790C860625205CCA00F8E932 /* HiChat */,
-				790C861D25205CCC00F8E932 /* HiChatTests */,
-				790C862825205CCC00F8E932 /* HiChatUITests */,
 				790C860525205CCA00F8E932 /* Products */,
 				AA73171C6F765498ECC257D4 /* Pods */,
 				BC69C038A98D02A34DFB2626 /* Frameworks */,
@@ -140,24 +132,6 @@
 				790C863B25206BD600F8E932 /* GoogleService-Info.plist */,
 			);
 			path = HiChat;
-			sourceTree = "<group>";
-		};
-		790C861D25205CCC00F8E932 /* HiChatTests */ = {
-			isa = PBXGroup;
-			children = (
-				790C861E25205CCC00F8E932 /* HiChatTests.swift */,
-				790C862025205CCC00F8E932 /* Info.plist */,
-			);
-			path = HiChatTests;
-			sourceTree = "<group>";
-		};
-		790C862825205CCC00F8E932 /* HiChatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				790C862925205CCC00F8E932 /* HiChatUITests.swift */,
-				790C862B25205CCC00F8E932 /* Info.plist */,
-			);
-			path = HiChatUITests;
 			sourceTree = "<group>";
 		};
 		790C863725205CE600F8E932 /* View */ = {
@@ -469,7 +443,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790C861F25205CCC00F8E932 /* HiChatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +450,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790C862A25205CCC00F8E932 /* HiChatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

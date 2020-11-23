@@ -11,12 +11,8 @@ import UIKit
 class HomeCell: UICollectionViewCell {
     
     @IBOutlet weak var nameTxt: UITextField!
-    
     @IBOutlet weak var emailTxt: UITextField!
-    
     @IBOutlet weak var passwordTxt: UITextField!
-
     @IBOutlet weak var actionBtn: UIButton!
-    
     @IBOutlet weak var sliderBtn: UIButton!
 }

@@ -7,9 +7,7 @@
 //
 
 import Foundation
-
 struct messegeModel {
-    
     var messegeKey: String?
     var senderMessege: String?
     var textMessege: String?

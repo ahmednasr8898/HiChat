@@ -7,11 +7,7 @@
 //
 
 import Foundation
-
-
 struct roomModel {
-    
     var roomId: String?
     var roomName: String?
-    
 }
