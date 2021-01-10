@@ -5,7 +5,6 @@
 //  Created by Ahmed Nasr on 9/27/20.
 //  Copyright © 2020 Ahmed Nasr. All rights reserved.
 //
-
 import UIKit
 import Firebase
 class ChatVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
