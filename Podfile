@@ -9,8 +9,7 @@ target 'HiChat' do
    pod 'Firebase/Database'
    pod 'Firebase/Auth'
    pod 'Firebase/Core' 
-
-  # Pods for HiChat
+   pod 'Toast-Swift', '~> 5.0.1'
 
   target 'HiChatTests' do
     inherit! :search_paths

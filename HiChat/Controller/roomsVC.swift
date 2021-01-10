@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import Toast_Swift
 class roomsVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
@@ -92,22 +93,25 @@ extension roomsVC{
         let room = ref.child("Rooms").childByAutoId()
         let roomName = roomNameTxt.text
         guard roomName != nil , roomName?.isEmpty == false else { return }
-        self.showAlert(title: "Do you want to make your room private ", messege: "Recommended", placeholderTextField: "put password") {
+        self.showAlert(title: "Do you want to make your room private??", messege: "if you not want click cancel", placeholderTextField: "put password") {
             (passowrd,cancel)  in
             if cancel{
                 self.getCurrentUserName { (userName) in
                     room.setValue(["roomName": roomName, "roomOwner":userName]) { (error, ref) in
                         if error == nil{
                             self.roomNameTxt.text = ""
+                            print("success create public room")
+                            self.view.makeToast("success create public room")
                         }
                     }
                 }
             }else{
-                print("your room is private")
                 self.getCurrentUserName { (userName) in
                     room.setValue(["roomName": roomName, "roomOwner":userName, "roomPassword": passowrd]) { (error, ref) in
                         if error == nil{
                             self.roomNameTxt.text = ""
+                            print("success create private room")
+                            self.view.makeToast("success create private room")
                         }
                     }
                 }
@@ -126,7 +130,8 @@ extension roomsVC{
                     if self.roomModelArray[indexpathRow].roomPassword == password{
                         self.goToRoomVC(indexPathRow: indexpathRow)
                     }else{
-                        print("this password is worng!!!")
+                        print("password is worng...")
+                        self.view.makeToast("password is worng...")
                     }
                 }
             }
@@ -144,7 +149,8 @@ extension roomsVC{
         let okButton = UIAlertAction(title: "OK", style: .default) { (_) in
             //handel
             guard let txt = alert.textFields?[0].text, !txt.isEmpty else {
-                print("must put passowrd to room")
+                print("must put passowrd")
+                self.view.makeToast("must put passowrd")
                 return
             }
             complation(txt,false)
