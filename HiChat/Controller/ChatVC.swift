@@ -24,8 +24,7 @@ class ChatVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
         title = room?.roomName
     }
     @IBAction func sendMessegeOnClick(_ sender: Any) {
-        let messege = messegeTxt.text
-        guard messege != nil , messege?.isEmpty == false , let userId = Auth.auth().currentUser?.uid else { return }
+        guard let messege =  messegeTxt.text , !messege.isEmpty , let userId = Auth.auth().currentUser?.uid else { return }
         let ref = Database.database().reference()
         let user = ref.child("Users").child(userId)
         user.child("userName").observeSingleEvent(of: .value) { (snapshot) in

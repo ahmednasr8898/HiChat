@@ -42,22 +42,7 @@ class roomsVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if roomModelArray[indexPath.row].roomPassword != "" {
-            //room private
-            showAlert(title: "enter password fot join this room", messege: "", placeholderTextField: "put password") { (password, isCancelDialog) in
-                if isCancelDialog{
-                    self.dismiss(animated: true, completion: nil)
-                }else{
-                    if self.roomModelArray[indexPath.row].roomPassword == password{
-                        self.goToRoomVC(indexPathRow: indexPath.row)
-                    }else{
-                        print("this password is worng!!!")
-                    }
-                }
-            }
-        }else{
-            self.goToRoomVC(indexPathRow: indexPath.row)
-        }
+        selectItemRoom(indexpathRow: indexPath.row)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return roomModelArray.count
@@ -94,29 +79,6 @@ extension roomsVC{
     }
 }
 extension roomsVC{
-    func showAlert(title: String?, messege: String?,placeholderTextField: String?, complation: @escaping (String?,Bool)->Void){
-        let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
-        alert.addTextField { (txt) in
-            txt.placeholder = placeholderTextField
-        }
-        let okButton = UIAlertAction(title: "OK", style: .default) { (_) in
-            //handel
-            guard let txt = alert.textFields?[0].text, !txt.isEmpty else {
-                print("must put passowrd to room")
-                return
-            }
-            complation(txt,false)
-        }
-        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
-            complation(nil,true)
-        }
-        alert.addAction(okButton)
-        alert.addAction(cancelButton)
-        self.present(alert, animated: true, completion: nil)
-    }
-}
-
-extension roomsVC{
     func goToRoomVC(indexPathRow: Int){
         let selectedroom = self.roomModelArray[indexPathRow]
         let openChatView = self.storyboard?.instantiateViewController(identifier: "chatView") as! ChatVC
@@ -151,5 +113,47 @@ extension roomsVC{
                 }
             }
         }
+    }
+}
+extension roomsVC{
+    func selectItemRoom(indexpathRow: Int){
+        if roomModelArray[indexpathRow].roomPassword != "" {
+            //room private
+            showAlert(title: "enter password fot join this room", messege: "", placeholderTextField: "put password") { (password, isCancelDialog) in
+                if isCancelDialog{
+                    self.dismiss(animated: true, completion: nil)
+                }else{
+                    if self.roomModelArray[indexpathRow].roomPassword == password{
+                        self.goToRoomVC(indexPathRow: indexpathRow)
+                    }else{
+                        print("this password is worng!!!")
+                    }
+                }
+            }
+        }else{
+            self.goToRoomVC(indexPathRow: indexpathRow)
+        }
+    }
+}
+extension roomsVC{
+    func showAlert(title: String?, messege: String?,placeholderTextField: String?, complation: @escaping (String?,Bool)->Void){
+        let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
+        alert.addTextField { (txt) in
+            txt.placeholder = placeholderTextField
+        }
+        let okButton = UIAlertAction(title: "OK", style: .default) { (_) in
+            //handel
+            guard let txt = alert.textFields?[0].text, !txt.isEmpty else {
+                print("must put passowrd to room")
+                return
+            }
+            complation(txt,false)
+        }
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+            complation(nil,true)
+        }
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        self.present(alert, animated: true, completion: nil)
     }
 }

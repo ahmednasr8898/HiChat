@@ -55,7 +55,6 @@ class HomeVC: UIViewController, UICollectionViewDelegate , UICollectionViewDataS
         guard (email != nil) , (password != nil) else { return }
         if (userName?.isEmpty == true || email?.isEmpty == true || password?.isEmpty == true){
             displayError(messegeError: "All Fields is required")
-            
         }else{
         Auth.auth().createUser(withEmail: email!, password: password!) { (result, error) in
             if error == nil {
